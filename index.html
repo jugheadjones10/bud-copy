@@ -10,6 +10,18 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("section").mouseenter(function () {
+                console.log("entered section")
+                var id = $(this).attr('id')
+                $('a').removeClass('active')
+                $("[href=" + '"#' + id + '"' + "]").addClass('active')
+            })
+        })
+    </script>
 </head>
 
 
@@ -21,7 +33,7 @@
     </header>
 
     <div class="topnav">
-        <a class="active" href="#no1">Visibiltiy Of System Status</a>
+        <a href="#no1">Visibiltiy Of System Status</a>
         <a href="#no2">Match Between System &amp; Real World</a>
         <a href="#no3">User Control &amp; Freedom</a>
         <a href="#no4">Consistancy &amp; Standards</a>
@@ -81,7 +93,7 @@
             Deprived of responsiveness, a user will end up feeling helpless and frustrated.
         </p>
 
-        
+
         <div class="container">
             <div class="row">
                 <span class="btn btn-small submit">I</span>
@@ -111,7 +123,8 @@
             <!-- <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-7-638.jpg?cb=1409788592"
                 width="500" height="300" alt="Label"> -->
             Nielson's second heuristic : the system should talk to the user in layman's terms, not in technical ones.
-            Complicated language repels, understandable language attracts. If you have no choice but to use technical acronyms,
+            Complicated language repels, understandable language attracts. If you have no choice but to use technical
+            acronyms,
             explain them - don't make users leave the page to Google.
         </p>
 
@@ -121,7 +134,14 @@
             <div class="acronym">Automated Teller Machine</div>
             <div class="acronym">Vital Technical Marketing</div>
         </div>
-       
+
+        <p>
+            Leverage a user's familiarity with real world objects and models. If there is an online
+            representation of a physical object, I will know immediately how to use it. A foreign,
+            digital view, however, may elicit confustion. Smoothen the user's transition from off
+            to online.
+        </p>
+
     </section>
 
     <section id="no3">
@@ -130,54 +150,67 @@
             <!-- <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-10-638.jpg?cb=1409788592"
                 width="500" height="300" alt="picture"> -->
 
-            Users often choose system functions by mistake and will need a clearly marked "emergency exit"
-            to leave the unwanted state without having to go through an extended dialogue. For example, a popular
-            alternative is the &quot;undo&quot; button.
-            <br />
-            <br />
-
-            Another alternative would be to code the website such that when pressing a link, a new tab will be
-            automatically opened so that the user is free to visit the previous page by switching tabs, allowing the
-            user to experience freedom when navigating the website
-
+            Nielson's third heuristic : hand over complete control to the user. If the user
+            wants to leave the website, let him. If the user wants to terminate an important
+            process, let him. The exit sign should be clearly visible, like it is in physical buildings.
 
         </p>
+
+        <div id="close-buttons">
+            <a class="close-button"></a>
+            <a class="close-button v2"></a>
+            <a class="close-button v3"></a>
+            <a class="close-button v4"></a>
+
+        </div>
+
     </section>
 
 
     <section id="no4">
         <h3>CONSISTENCY &amp; STANDARDS</h3>
-        <p>Users should not have to wonder whether different words, situations, or actions mean the
-            same thing. Follow platform conventions.</p>
+        <p>
+            Nielson's fourth heuristic : do not make users remember different things for different
+            situations. If the exit button is red on one page, it should be red on all the others.
+            Stick to one of the below, not all.
+        </p>
+
+        <div id="diverse-buttons">
+            <div class="diverse-row">
+                <button class='lined thick'>Lined Thick</button>
+                <button class='dotted thick'>Dotted Thick</button>
+                <button class='dashed thick'>Dashed Thick</button>
+
+            </div>
+
+            <div class="diverse-row">
+                <button class='lined thin'>Lined Thin</button>
+                <button class='dotted thin'>Dotted Thin</button>
+                <button class='dashed thin'>Dashed Thin</button>
+
+            </div>
+
+        </div>
+
+
     </section>
 
     <section id="no5">
         <h3>ERROR PREVENTION</h3>
-        <p>One of the 10 Usability Heuristics advises that it’s important to communicate errors to users gracefully,
-            actionably, and clearly. However, it’s even better to prevent users from making errors in the first place
+        <p>
+            Nielson's fifth heuristic : do not blame or criticize users when they make a mistake. Instead,
+            prevent errors from occurring in the first place. Include constraints so that users do not
+            have much room to err; offer suggestions whenever an action is required of the user; provide
+            smart defaults in appropriate instances; and be flexible when receiving user input. An ommision
+            of a space or not in their phone number shouldn't cause an error window to pop up.
 
-            A crucial point in discussing user errors is where to assign the blame for the error. The term “user error”
-            implies that the user is at fault for having done something wrong. Not so. The designer is at fault for
-            making it too easy for the user to commit the error. Therefore, the solution to user errors is not to scold
-            users, to ask them to try harder, or to give them more extensive training. The answer is to redesign the
-            system to be less error prone.
-            <ul>
-                <li>Slips occur when users intend to perform one action, but end up doing another (often similar)
-                    action. For example, typing an “i” instead of an “o” counts as a slip; accidentally putting liquid
-                    hand soap on one’s toothbrush instead of toothpaste is also a slip. Slips are typically made when
-                    users are on autopilot, and when they do not fully devote their attention resources to the task at
-                    hand.</li>
-                <li>Mistakes are made when users have goals that are inappropriate for the current problem or task;
-                    even if they take the right steps to complete their goals, the steps will result in an error. For
-                    example, if I misunderstood the meaning of the oil-pressure warning light in my car, and thought it
-                    was the tire-pressure monitor, no matter how carefully I added air to my tires, it would not fix
-                    the issue with my oil pressure. This would be a mistake, since the goal that I was attempting to
-                    accomplish was inappropriate for the situation, even though I made no errors in executing my plan.
-                    Mistakes are conscious errors, and often (though not exclusively) arise when a user has incomplete
-                    or incorrect information about the task, and develops a mental model that doesn’t match how the
-                    interface actually works.</li>
-            </ul>
+            <br />
+            <br />
+
+            If an error does occur, however, guide the user in clear steps. Never flood them with technical
+            jargon or offer useless advice.
         </p>
+
 
     </section>
 
@@ -186,25 +219,24 @@
         <h3>RECOGNITION RATHER THAN RECALL</h3>
         <!-- <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjsg--zzarhAhUHrI8KHUogAUwQjRx6BAgBEAU&url=https%3A%2F%2Fsites.google.com%2Fa%2Fmail.usf.edu%2Fmymoney%2Fhow-it-works%2Fusability-heuristics%2Frecognition-rather-than-recall&psig=AOvVaw1vDEvDzspA8fHD1o43HqxR&ust=1554060702867531"
                  width="500" height="300"> -->
-        <p>Minimize the user's memory load by making objects, actions, and options visible (Windows famous ribbon
-            logo). The user
-            should not have to remember information from one part of the dialogue to another.
-            Instructions for use of the system should be visible or easily retrievable whenever
-            appropriate.</p>
+        <p> Nielson's sixth heuristic : do not drown the user's brain. Keep all
+            pertinent information visible to the user and ensure that they see instructions,
+            not recall them.
+        </p>
+        
     </section>
 
     <section id="no7">
         <h3>FLEXIBILITY &amp; EFFICIENCY OF USE</h3>
-        <p>Accelerators -- unseen by the novice user -- may often speed up the interaction for the expert
-            user such that the system can cater to both inexperienced and experienced users. Allow
-            users to tailor frequent actions.</p>
+        <p>Nielson's seventh heuristic : tailor your system for both novice and 
+            expert users. Experts should be able to quickly jump around using keyboard shortcuts,
+            while novices can always opt to take the slower, more visual path.</p>
     </section>
 
     <section id="no8">
         <h3>AESTHETIC &amp; MINIMALIST DESIGN</h3>
-        <p>Dialogues should not contain information which is irrelevant or rarely needed. Every extra
-            unit of information in a dialogue competes with the relevant units of information and
-            diminishes their relative visibility.</p>
+        <p>Nielson's eighth heuristic : we have short memory spans. Every piece of instruction,
+            every line of text, should be short and concise. More words will dilute the core information.</p>
     </section>
 
     <section id="no9">
@@ -221,10 +253,15 @@
             search, focused on the user's task, list concrete steps to be carried out, and not be too large.</p>
     </section>
 
-
-    <p> BACK TO TOP: <a href="#top"> CLICK HERE</a></p>
-    <div>References from &copy; Neilson Norman Group </div>
-    <div>website made by Daniel Choi for webdevelopment practicing purposes</div>
+    <section>
+        <p>
+                References from &copy; Neilson Norman Group 
+                <br/>
+                Website made by Daniel Choi for web development practicing purposes
+        </p>
+           
+    </section>
+    
 
     <script src="index.js"></script>
 </body>

@@ -328,10 +328,14 @@ section p{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
     flex-direction: column;
 
     box-sizing: border-box;
+
+    height: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #EE7879;
 }
 
 .acronym {
@@ -345,6 +349,8 @@ section p{
     transition: all 0.15s ease-out;
     
     box-sizing: border-box;
+    background-color: #CAE7DF;
+    color: #2A3166;
 }
 
 .acronym .letter {
@@ -363,7 +369,7 @@ section p{
 }
 
 .acronym:hover {
-	background-color: #11a0ff;
+	background-color: #F4ABAA;
 	color: white;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
     
@@ -384,3 +390,188 @@ section p{
 
 
 /*///////////Acronyms expander end/////////////////////*/
+
+/*///////////Close buttons/////////////////////*/
+.close-button {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 50px;
+    display: inline-block;
+    border: solid 0 #f03861;
+    border-radius: 50px;
+    transition: all 0.25s ease-out;
+    margin-bottom: 20px;
+    float: left;
+  }
+  .close-button:before,
+  .close-button:after {
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -13px;
+    display: block;
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    transition: all 0.25s ease-out;
+    border-radius: 30px;
+  }
+  .close-button:after {
+    transform: rotate(-135deg);
+  }
+  .close-button:hover {
+    border: solid 25px #f03861;
+  }
+  .close-button:hover:before {
+    transform: rotate(45deg);
+  }
+  .close-button:hover:after {
+    transform: rotate(-45deg);
+  }
+  .v2 {
+    border: solid 4px #fff;
+  }
+  .v3 {
+    border: solid 4px #fff;
+  }
+  .v3:hover {
+    border: solid 25px #fff;
+  }
+  .v3:hover:before {
+    transform: rotate(45deg);
+    background-color: #f03861;
+  }
+  .v3:hover:after {
+    transform: rotate(-45deg);
+    background-color: #f03861;
+  }
+  .v4 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+  }
+  .v4:hover {
+    background-color: #f03861;
+    border: 0;
+  }
+  /* ========================= */
+  #close-buttons {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #EE7879;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: white;
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+  }
+  
+/*///////////Close buttons end/////////////////////*/
+
+
+/*///////////Diverse buttons/////////////////////*/
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+#diverse-buttons {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #EE7879;
+  font-family: 'Patrick Hand SC', cursive;
+
+  padding-top: 30px;
+  padding-bottom: 110px;
+}
+
+.diverse-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 3rem;
+}
+.diverse-row button {
+  align-self: center;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  /*
+  Above is shorthand for:
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  */
+}
+.diverse-row button:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+.diverse-row button.lined.thick {
+  border: solid 7px #41403E;
+}
+.diverse-row button.dotted.thick {
+  border: dotted 5px #41403E;
+}
+.diverse-row button.dashed.thick {
+  border: dashed 5px #41403E;
+}
+.diverse-row button.lined.thin {
+  border: solid 2px #41403E;
+}
+.diverse-row button.dotted.thin {
+  border: dotted 2px #41403E;
+}
+.diverse-row button.dashed.thin {
+  border: dashed 2px #41403E;
+}
+
+/* @media (max-width: 620px) {
+  body h1 {
+    margin-top: 2rem;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  body section button {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+} */
+
+
+/*///////////Diverse buttons end/////////////////////*/
+
+/*///////////Brain/////////////////////*/
+
+
+
+/*///////////Brain end/////////////////////*/
