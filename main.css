@@ -324,5 +324,63 @@ section p{
 /*///////////Second heuristic example end/////////////////////*/
 
 /*///////////Acronyms expander/////////////////////*/
+#acronyms-expander {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+.acronym {
+	font-size: 2em;
+	display: flex;
+	align-items: baseline;
+	padding: 10px 20px;
+	border-radius: 50px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+	margin-bottom: 20px;
+    transition: all 0.15s ease-out;
+    
+    box-sizing: border-box;
+}
+
+.acronym .letter {
+    font-size: 1.1em;
+    
+    box-sizing: border-box;
+}
+
+.acronym .word {
+	max-width: 0;
+	overflow: hidden;
+	margin-right: 4px;
+    transition: max-width 0.75s ease-out;
+    
+    box-sizing: border-box;
+}
+
+.acronym:hover {
+	background-color: #11a0ff;
+	color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+    
+    box-sizing: border-box;
+}
+
+.acronym:hover .word {
+    max-width: 999px;
+    
+    box-sizing: border-box;
+}
+
+.acronym:hover .letter {
+    text-decoration: underline;
+    
+    box-sizing: border-box;
+}
+
 
 /*///////////Acronyms expander end/////////////////////*/
