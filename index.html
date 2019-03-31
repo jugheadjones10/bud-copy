@@ -39,81 +39,14 @@
         <p>
             <!-- <img src="https://usabilitygeek.com/wp-content/uploads/2016/05/heuristic-evaluation-04-visibility.jpg"
                 width="500" height="300" alt="Picture"> -->
-
-            The system should always keep users informed about what is going on, through appropriate
-            feedback within reasonable time.
-            The first of Jakob Nielsen’s ten heuristics — visibility of system status — relates to so much more
-            than user-interface design. At its essence, it is about communication and transparency, which are
-            critical to many aspects of life. People strive for predictability and control, and, in most cases,
-            more information translates to better decision making.
-
-            Wherever you are, whatever you are doing, take a few moments to look around and note the various types
-            of systems around you, and how they communicate their current status. Your phone or laptop display how
-            much battery life remains; your email application tells you how many unread emails you have; a sign in
-            the subway indicates the next stop (or, if you’ve missed the last one, how many minutes until the next
-            train arrives at the station). All these nuggets of information allow you to accurately assess the
-            current state of the systems you interact with.
-
-            Definition: The visibility of system status refers to how well the state of the system is conveyed to
-            its users. Ideally, systems should always keep users informed about what is going on, through
-            appropriate feedback within reasonable time.
-
-            <br />
-            <br />
-
-            Only by knowing what the current system status is can you change it — that is, you can overcome the
-            gulf of evaluation and figure out what you need to do next in order to reach your goal.
-
-            For instance, when you drive a car, you need to continuously see its speed to decide if you need to go
-            faster or slow down. Those who have ever driven a car where the speedometer was broken can attest to
-            the fact that it’s quite difficult. When this happened to me, I felt at the mercy of the cars around
-            me, as I attempted to keep pace and blindly trust that they were going at a reasonable speed. A lack of
-            information often equates to a lack of control.
-
-            <br />
-            <br />
-
-            Appropriate Feedback :
-            <br />
-            <br />
-
-            Whenever users interact with a system, they need to know whether the interaction was successful. Did
-            the system actually catch that button press or was it busy with something else and it ignored it? Did
-            the item get added to cart? Did the request go through? (One reason users have these questions is that
-            they have been burned before by technology that didn’t work properly. However, even when the happy day
-            of bug-free technology arrives, people will still wonder if they really clicked or tapped correctly.)
-
-            Appropriate feedback for a user action is perhaps the most basic guideline of user-interface design. It
-            serves to keep users informed of the current status and to allow them to steer the interaction in the
-            right direction, without wasting effort.
-
-            Such feedback can be as simple as a change of color once the user has clicked on a button, or a
-            progress indicator when a process needs a little longer to finish. These indicators communicate that
-            the system is working, and reduce uncertainty — preventing users from, say, tapping the same button
-            multiple times because they weren’t sure if the first time worked.
+            Nielson's first heuristic : the system should always keep users informed about its current state.
+            When a user is aware of system states, he can actively change them, hence imparting him with control.
         </p>
 
-        <div class="container">
-            <div class="row">
-                <span class="btn btn-small submit">Submit</span>
-                <span class="btn btn-small submit">Go!</span>
-                <span class="btn btn-small submit">Search</span>
-                <span class="btn btn-small submit">No</span>
-                <span class="btn btn-small submit">Maybe</span>
-            </div>
-            <div class="row">
-                <span class="btn btn-medium info">Cancel</span>
-                <span class="btn btn-medium info">Clear</span>
-                <span class="btn btn-medium info">Yes</span>
-            </div>
-            <div class="row">
-                <span class="btn btn-large cancel">Big Ole Button</span>
-            </div>
-        </div>
 
         <div class="wrapper">
             <div class="progressbar">
-    
+
                 <input class="progressbar__checker" type="radio" id="zero" name="progress-value">
                 <label class="progressbar__text" for="zero">0%</label>
                 <input class="progressbar__checker" type="radio" id="twenty-five" name="progress-value">
@@ -124,7 +57,7 @@
                 <label class="progressbar__text" for="seventy-five">75%</label>
                 <input class="progressbar__checker" type="radio" id="hundred" name="progress-value">
                 <label class="progressbar__text" for="hundred">100%</label>
-    
+
                 <div class="side side__front">
                     <div class="side__fill"></div>
                 </div>
@@ -141,6 +74,35 @@
             </div>
         </div>
 
+
+        <p>
+            To keep the user up to date on its status, a system should also be able to provide immediate feedback
+            to a user's actions. When I press a button, I expect the button to tell me that it has been pressed.
+            Deprived of responsiveness, a user will end up feeling helpless and frustrated.
+        </p>
+
+        
+        <div class="container">
+            <div class="row">
+                <span class="btn btn-small submit">I</span>
+                <span class="btn btn-small submit">Am</span>
+                <span class="btn btn-small submit">Giving</span>
+                <span class="btn btn-small submit">You</span>
+                <span class="btn btn-small submit">Feedback</span>
+            </div>
+            <div class="row">
+                <span class="btn btn-medium info">When</span>
+                <span class="btn btn-medium info">You</span>
+                <span class="btn btn-medium info">Press</span>
+            </div>
+            <div class="row">
+                <span class="btn btn-large cancel">Me</span>
+            </div>
+        </div>
+
+
+
+
     </section>
 
     <section id="no2">
@@ -148,33 +110,18 @@
         <p>
             <!-- <img src="https://image.slidesharecdn.com/10usabilityheuristicsexplained-140903065750-phpapp02/95/10-usability-heuristics-explained-7-638.jpg?cb=1409788592"
                 width="500" height="300" alt="Label"> -->
-
-            The system should speak the users' language, with words, phrases, and concepts familiar to the user,
-            rather than system-oriented terms. Follow real-world conventions, making information appear in a
-            natural and logical order.
-
-            As UX professionals, we should never assume that our own interpretations and understanding of words or
-            objects match those of our users. How we interpret the world
-            around us depends on a variety of circumstantial and personal factors. Experiences we’ve had, items
-            we’re familiar with, our beliefs, ideas, and values all contribute to how we infer meaning, and nuances
-            in interpretation will often vary from individual to individual.
-
-            <br />
-            <br />
-            The use of language is also imperative in a system. For example, in a seller's pages, the words
-            &quot;comment&quot; and &quot;feedback&quot; can mean very different things. If a customer's review for a
-            certain product is wanted, the word &quot;feedback&quot; would better suit
-            the system because &quot;comment&quot; can be misleading to the mainstream user terminology as it can mean
-            that the user can ask questions or interact with other users.
-
-            <br />
-            <br />
-            As such, generic terminologies should not be encouraged in any website
-
-
+            Nielson's second heuristic : the system should talk to the user in layman's terms, not in technical ones.
+            Complicated language repels, understandable language attracts. If you have no choice but to use technical acronyms,
+            explain them - don't make users leave the page to Google.
         </p>
 
-
+        <div id="acronyms-expander">
+            <div class="acronym">National Aeronautics Space Administration</div>
+            <div class="acronym">Self Contained Underwater Breathing Aparatus</div>
+            <div class="acronym">Automated Teller Machine</div>
+            <div class="acronym">Vital Technical Marketing</div>
+        </div>
+       
     </section>
 
     <section id="no3">
